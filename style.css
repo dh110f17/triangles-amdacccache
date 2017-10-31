@@ -1,0 +1,23 @@
+.block {
+    padding: 10px;
+    margin: 5px;
+    border-style: solid;
+    height: 100px;
+    font: 20px;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+#one {
+    background-color: #FFC300;
+    color: #581845; 
+}
+
+#two {
+    background-color: #5497FD;
+    color: #FD5482;    
+}
+
+#three {
+    background-color: #09870B;  
+    color: #07E6F9;
+}

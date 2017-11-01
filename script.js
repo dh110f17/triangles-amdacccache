@@ -38,7 +38,9 @@ var triangle = {
 var message1 = "The area of a triangle with a base of " + base + " and a height of " + height + " is " + area + ".";
 var message2 = "The hypotenuse of a triangle with a base of " + base + " and a height of " + height + " is " + hypotenuse + ".";
 
-document.getElementById("three").innerHTML = message1 + message2;
+document.getElementById("three").innerHTML = message1 
+//linebreak
+ message2;
 triangle.drawIt();
 
 

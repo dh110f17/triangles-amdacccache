@@ -43,3 +43,41 @@ var message2 = "The hypotenuse of a triangle with a base of " + base + " and a h
 document.getElementById("three").innerHTML = message1 + "<br>" + message2;
 
 triangle.drawIt();
+
+// Part 4: User entered base and height
+
+var userBase = prompt("Enter a value for the base that is at least 10.");
+
+if (userBase < 10) {
+  alert("Error!")
+}
+else 
+  var userHeight = prompt("Enter a value for the height that is greater than 0.");
+    if (userHeight <= 0) {
+      alert("Error!")
+    }
+    else 
+      triangle.base = userBase; 
+      triangle.height = userHeight;
+    
+
+var message1 = "The area of a triangle with a base of " + userBase + " and a height of " + userHeight + " is " + triangle.calcArea() + ".";
+var message2 = "The hypotenuse of a triangle with a base of " + userBase + " and a height of " + userHeight + " is " + triangle.calcHypotenuse() + ".";
+
+document.getElementById("four").innerHTML = message1 + "<br>" + message2;
+
+triangle.canvasId = "canvas2";
+
+triangle.drawIt();
+
+//Part 5: Lots of triangles
+
+document.getElementById("five").innerHTML = "Growing Triangles";
+
+for (var i=1; i<6; i++) {
+  triangle.base = 30 * i; 
+  triangle.height = 20 * i;
+  triangle.canvasId = "canvas3";
+  triangle.drawIt();
+}
+

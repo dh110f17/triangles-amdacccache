@@ -10,7 +10,7 @@ document.getElementById("one").innerHTML = message;
 
 function calcHypotenuse (b,h) {
   var hypotenuse = Math.sqrt((b*b) + (h * h));
-  return hypotenuse
+  return hypotenuse;
 };
 
 console.log(calcHypotenuse(base, height));

@@ -1,4 +1,5 @@
 // Part 1: Area of a triangle
+
 var base = 30;
 var height = 40;
 var area = 1 / 2 * (base * height);
@@ -20,19 +21,20 @@ var message = "The hypotenuse of a triangle with a base of " + base + " and a he
 document.getElementById("two").innerHTML = message;
 
 // Part 3: Triangle object
+
 var triangle = {
-  base: 30,
-  height: 40,
-  canvasID: "canvas",
-  calcArea: function() {
-    return (1/2) * this.base * this.height;
-  },
-  calcHypotenuse: function() {
-    return Math.sqrt(this.base * this.base + this.height * this.height);
-  },
-  drawIt: function() {
-    drawTriangle(this.base, this.height, this.canvasId);
-  },
+    base: 30,
+    height: 40,
+    canvasId: "canvas",
+    calcArea: function() {
+        return 0.5 * this.base * this.height;    
+    },
+    calcHypotenuse: function() {
+        return Math.sqrt(this.base * this.base + this.height * this.height);
+    },
+    drawIt: function() {               
+        drawTriangle(this.base, this.height, this.canvasId);
+    }
 };
 
 var message1 = "The area of a triangle with a base of " + base + " and a height of " + height + " is " + area + ".";
@@ -41,11 +43,3 @@ var message2 = "The hypotenuse of a triangle with a base of " + base + " and a h
 document.getElementById("three").innerHTML = message1 + "<br>" + message2;
 
 triangle.drawIt();
-
-
- 
-
-
-
-
-
